@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href=rezept.css>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Economica:wght@400;700&family=Quicksand:wght@300&family=Raleway:wght@100;400;700&family=Supermercado+One&display=swap"
+        rel="stylesheet">
+    <script src="rezeptchris.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href=style.css>
+    <link rel="stylesheet" href=stylerezept.css>
+    <link rel="stylesheet" href=rezeptR.css>
+    <link rel="stylesheet" href=stylechris.css>
+
+
+    <title>Rezept</title>
+</head>
+
+<body onload="includeHTML (); renderchris ()">
+
+    <div w3-include-html="Templates/header.html"></div>
+
+    <div class="align">
+        <div class="info" id="info">
+        </div>
+        <div id="recipe">
+
+        </div>
+        <h2>Zubereitung</h2>
+        <div class="iconszubereitung">
+            <div class="icon"><img src="img/icons/clock-regular.svg"> ca. 15 Minuten</div>
+            <div class="icon"><img src="img/icons/clock-regular.svg"> ca. 30 Minuten</div>
+        </div>
+        <span>Das Hackfleisch in Olivenöl anbraten und pfeffern und salzen. Die
+            geschälten, in Würfel geschnittenen
+            Kartoffeln dazugeben und für 5 Minuten mit geschlossenem Deckel garen lassen. Dann die Gemüsebrühe dazu
+            geben, zum Kochen bringen und 5 Minuten kochen lassen.
+
+            Danach das Tomatenmark dazugeben und die zerkleinerte Paprikaschote und das Ganze 20 Minuten bei
+            mittlerer Hitze köcheln lassen. Die gemischten Kräuter zugeben, abschmecken und servieren.
+            </p></span>
+        <h3>Rezept erstellt von</h3>
+        <div class="bottom">
+            <div><img class="profile" src="img/profile.png"> </div>
+            <div>Christian</div>
+        </div>
+    </div>
+    <div w3-include-html="Templates/footer.html"></div>
+
+</body>
+
+</html>

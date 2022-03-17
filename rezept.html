@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Economica:wght@400;700&family=Quicksand:wght@300&family=Raleway:wght@100;400;700&family=Supermercado+One&display=swap"
+        rel="stylesheet">
+    
+    <link rel="stylesheet" href=style.css>
+    <link rel="stylesheet" href=stylerezept.css>
+    <link rel="stylesheet" href=rezeptR.css>
+    <script src="rezeptole.js"></script>
+    <script src="script.js"></script>
+    
+    <title>Rezept</title>
+
+</head>
+
+<body onload="includeHTML (); renderole () ">
+
+    <div w3-include-html="Templates/header.html"></div>
+
+    <div class="align">
+        <div class="info" id="info">
+        </div>
+        <div id="recipe">
+
+        </div>
+        <h2>Zubereitung</h2>
+        <div class="iconszubereitung">
+            <div class="icon"><img src="img/icons/clock-regular.svg"> ca. 20 Minuten</div>
+            <div class="icon"><img src="img/icons/clock-regular.svg"> ca. 60 Minuten</div>
+        </div>
+        <span> 
+            Den Basmatireis nach Packungsangabe garen.
+
+            Eine Pfanne, besser einen Wok, mit 2 EL Öl sehr heiß werden lassen. Die Eier verquirlen und hinzufügen. Wenn
+            die Pfanne richtig heiß ist, gehen die Eier besonders luftig auf. Die Eier wenden und etwas zerkleinern,
+            danach herausnehmen und beiseitestellen.
+
+            Die verbliebenen 2 EL Öl in die Pfanne geben und die Frühlingszwiebeln zufügen, kurz anbraten und dann die
+            Tomate gemeinsam mit dem Knoblauch dazugeben. Wer möchte, kann auch etwas Ingwer zufügen. Anbraten, bis die
+            Tomaten die gewünschte Konsistenz haben, dann Zucker, Salz und Ketchup hinzufügen. <br> Zum Schluss die Eier
+            wieder zugeben, mit Sojasoße und Sesamöl abschmecken und nochmal kurz durchziehen lassen.
+
+            Auf einem Teller mit dem Reis anrichten. 
+        </span>
+        <h3>Rezept erstellt von</h3>
+        <div class="bottom"><div><img class="profile" src="img/profile.png"> </div>
+        <div>Ole</div></div>
+    </div>
+
+</div>
+
+    <div w3-include-html="Templates/footer.html"></div>
+
+</body>
+
+</html>

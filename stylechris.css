@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    color: gray;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.knive-image {
+    min-height: 50%;
+    width: 80%;
+    object-fit: cover;
+}
+
+.nicetoknow {
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+}
+
+
+h4 {
+    text-decoration: underline;
+    color: black;
+}
+
+h2{
+    color: black;
+}
+
+h3{
+    color: black;
+}
+
+.test {
+    margin-right: 50px;
+}
+
+.text {
+    margin-left: 20px;
+}
+
+ul li::marker {
+    color: red;
+    font-size: 1.5em;
+}
+
+.padding {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.knives {
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    text-align: left;
+    gap: 20px;
+    text-align: justify;
+    text-align-last: justify;
+}
+
+@media(max-width:1200px) {
+    .knive-image{
+        display: none;
+    }
+
+    .knives {
+        flex-wrap: wrap;
+    }
+h1 {
+    text-align: center;
+}
+h2{
+    text-align: center;
+}
+h3{
+    text-align:center;
+}
+li{
+    text-align: center;
+}
+h4{
+    text-align: center;
+}
+
+.knives {
+    text-align: unset;
+    text-align-last: unset;
+}
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Mail</title>
+
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="stylerezept.css">
+    <link rel="stylesheet" href="stylekontakt.css">
+
+    <script src="script.js"></script>
+
+</head>
+
+<body onload="includeHTML ()">
+
+    <div w3-include-html="Templates/header.html"></div>
+
+    <div class="kontaktformular">
+        <h2>Kontaktformular</h2>
+        <p>Wir würden uns sehr freuen, wenn wir mit unserer Seite Ihr Interesse wecken konnten. <br>
+            Falls Sie weitere Nachfragen oder Anregungen für uns haben sollten, zögern Sie bitte nicht, <br>
+            Schicken Sie uns gerne eine Email über dieses Kontaktformular! <br>
+            Wir werden Ihr Anliegen mit größter Sorgfalt und so schnell wie möglich behandeln.
+        </p>
+        <img class="img-fb" src="./img/feedback.jpg" alt="">
+
+    </div>
+
+    <div class="container">
+        <form action="http://f014981a@gruppe-185.developerakademie.net/Kochwelt_Rebecca/Kochwelt_final/send_mail.php" method="POST">
+
+        <div class="row">
+            <div class="col-75">
+                <input required type="text" id="fname" name="name" placeholder="Dein Name..">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-75">
+                <input type="text" id="lname" name="lastname" placeholder="Nachname..">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-75">
+                <select id="country" name="country">
+                    <option value="kontaktgrund">Kontaktgrund</option>
+                    <option value="account">Account</option>
+                    <option value="thema">Anderes Thema</option>
+                    <option value="forum">Forum und Netiquette</option>
+                    <option value="androidapp">Android App</option>
+                    <option value="iosapp">iOS App</option>
+                    <option value="recipe">Rezepte und Bilder</option>
+                    <option value="mail">E-Mail Newsletter</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="row">
+
+            <div class="col-75">
+                <select id="country" name="country">
+                    <option value="country">Land</option>
+                    <option value="germany">Deutschland</option>
+                    <option value="oessterreich">Österreich</option>
+                    <option value="swizerland">Schweiz</option>
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-75">
+                <textarea required id="subject" name="message" placeholder="Schreibe uns..." style="height:200px"></textarea>
+            </div>
+        </div>
+        <br>
+        <div class="submit-btn">
+            <button type="submit">E-Mail senden</button>
+        </div>
+    </form>
+    </div>
+    <div w3-include-html="Templates/footer.html"></div>
+</body>
+
+</html>

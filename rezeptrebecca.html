@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Economica:wght@400;700&family=Quicksand:wght@300&family=Raleway:wght@100;400;700&family=Supermercado+One&display=swap"
+        rel="stylesheet">
+    
+    <link rel="stylesheet" href=style.css>
+    <link rel="stylesheet" href=stylerezept.css>
+    <link rel="stylesheet" href=rezeptR.css>
+    <script src="rezeptR.js"></script>
+    <script src="script.js"></script>
+    
+    <title>Rezept</title>
+
+</head>
+
+<body onload="includeHTML (); render () ">
+
+    <div w3-include-html="Templates/header.html"></div>
+
+
+
+    <div class="align">
+        <div class="info" id="info">
+        </div>
+        <div id="recipe">
+
+        </div>
+        <h2>Zubereitung</h2>
+        <div class="iconszubereitung">
+            <div class="icon"><img src="img/icons/clock-regular.svg"> ca. 20 Minuten</div>
+            <div class="icon"><img src="img/icons/clock-regular.svg"> ca. 60 Minuten</div>
+        </div>
+        <span>Zuerst die Kartoffeln schälen. Am besten eignen sind hierfür regionale Kartoffeln vom nächstgelegenen Bauernhof, da diese den Geschmack maßgeblich beeinflussen. Die Kartoffeln, je nach Geschmack, auf einer feinen oder groben Reibe reiben. Im Anschluss daran die Zwiebel schälen und ebenfalls reiben. Der Masse ein Ei, ordentlich Salz und etwas Pfeffer hinzufügen und gut durchrühren. Zum Schluss die Semmelbrösel hinzufügen, je nachdem wie frisch die Kartoffeln sind, muss die Menge etwas erhöht werden, damit die Masse nicht zu flüssig ist. Den Pfannenboden komplett mit ÖL bedecken, bei hoher Tenmperatur von beiden Seiten schön knusprig braten. Damit das Ganze nicht zu fettig wird, den gebratenen Reibekuchen mit Küchenkrepp abtupfen. <br>Alternativ kann die Masse auf einem mit Backpapier ausgelegten Blech zu Puffern geformt werden. Diese leicht mit Öl bestreichen und bei 170 Grad Heißluft im Backofen goldgelb backen. Am besten schmecken die Reibekuchen mit frischem Apfelmus.</span>
+        <h3>Rezept erstellt von</h3>
+        <div class="bottom"><div><img class="profile" src="img/profile.png"> </div>
+        <div>Rebecca</div></div>
+    </div>
+
+</div>
+
+    <div w3-include-html="Templates/footer.html"></div>
+
+</body>
+
+</html>

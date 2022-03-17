@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <title>Kochwelt</title>
+    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Economica:wght@400;700&family=Quicksand:wght@300&family=Raleway:wght@100;400;700&family=Supermercado+One&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="stylerezept.css">
+
+    <script src="script.js"></script>
+
+
+</head>
+
+<body onload="includeHTML (); randomrecipe()">
+
+        <div w3-include-html="Templates/header.html"></div>
+
+        <div class="head-bereich">
+
+            <img id="bild" class="croissant" src="">
+
+            <div class="Franz">
+                <h2 id="title">Französische Croissants</h2>
+                <p id="description"></p>
+                <a id="button" href=""><button>Rezept öffnen</button></a>
+                    <!--
+                        VORHER HATTE ICH HIER EINE CLASS="button" definiert und die als a Tag gemacht
+                     !-->
+            </div>
+            
+        </div>
+
+        <div class="Lust">
+
+            <h2>Lust auf was Neues?</h2>
+            <div class="Auswahl">
+                <div>
+                    <a href="rezeptole.html"> <img class="croissant2" src="img/xihongshi.jpeg" alt=""></a>
+                    <a href="rezeptole.html"> <h3>Xihongshi Jidan</h3></a>
+                </div>
+                <div>
+                    <a href="rezeptrebecca.html"><img class="croissant2" src="img/Reibekuchen_mit_Apfelmus.jpg" alt=""></a>
+                    <a href="rezeptrebecca.html"> <h3>Großmutter's Reibekuchen</h3></a>
+                </div>
+                <div>
+                    <a href="rezeptchristian.html"><img class="croissant2" src="img/bauerntopf.jpg" alt=""></a>
+                    <a href="rezeptchristian.html"> <h3>Bauerntopf</h3></a>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <h2 class="text-centre">Fusion - Illusion: Was hat es damit auf sich?</h2>
+            <div class="fusion">
+            <img class="wok" src="img/art.jpg">
+            <p>
+                Als Fusionsküche wird die Kombination unterschiedlicher Esskulturen und Kochkünste sowie die Vermischung klassischer Regional- und Nationalküchen verstanden. Synonym findet sich dazu die Bezeichnung Crossover bzw. Corossover-Küche.
+
+                <br>
+                
+                Als Fusionsküche wurde ursprünglich die Kombination landestypischer Zutaten aus verschiedenen Regionen, beispielsweise aus Asien und Europa, bezeichnet. Mittlerweile wird die Bezeichnung auch für die Verarbeitung von scheinbar nicht zusammenpassenden Zutaten in einem Gericht verwendet.
+                
+                <br> Die Fusionsküche gilt als Küche im Zeitalter der <b>Globalisierung</b>.    
+                In einem Satz: <br> <br>
+
+                <b class="slogan text-centre">Die Welt kommt am Tisch zusammen.</b>
+            </p>
+            <img class="wok" src="img/dishes.jpg">
+            </div>
+        </div>
+
+        <div w3-include-html="Templates/footer.html"></div>
+<div class="cookie-consent"> <span>This site uses cookies to enhance user experience. see<a href="#" class="ml-1 text-decoration-none">Privacy policy</a> </span>
+    <div class="mt-2 d-flex align-items-center justify-content-center g-2"> <button class="allow-button mr-1">Allow cookies</button> <button class="allow-button">cancel</button> </div>
+</div>
+</body>
+</html>
